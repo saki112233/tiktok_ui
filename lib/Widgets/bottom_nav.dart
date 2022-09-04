@@ -34,7 +34,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("assets/images/tiktok_add.png",height: 25,),
+            icon: Image.asset("assets/tiktok_add.png",height: 25,),
             label: 'Add',
           ),
           const BottomNavigationBarItem(
@@ -49,7 +49,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         currentIndex: _selectedIndex,
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
-        backgroundColor: Color(0xFF141518),
+        backgroundColor: const Color(0xFF141518),
         selectedItemColor: Colors.white,
         showUnselectedLabels: false,
         unselectedItemColor: Colors.grey,

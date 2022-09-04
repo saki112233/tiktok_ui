@@ -6,24 +6,26 @@ class PostContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
     return Column(
       children: [
         Container(
-          height: 100,
-          padding: const EdgeInsets.only(top: 40),
+          height: screenHeight*0.1,
+          padding:  EdgeInsets.only(top: screenHeight*0.04),
           // color: Colors.blue,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
+            children: [
+              const Text(
                 "Following",
                 style:
                 TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
               ),
               SizedBox(
-                width: 20,
+                width: screenWidth*.04,
               ),
-              Text(
+              const Text(
                 "For you",
                 style:
                 TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
@@ -51,7 +53,7 @@ class PostContent extends StatelessWidget {
                         ),
                         const Text(
                           "I am making video.#new#thug_Life",
-                          style: const TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white),
                         ),
                         const SizedBox(
                           height: 10,
@@ -67,7 +69,7 @@ class PostContent extends StatelessWidget {
                               width: 5,
                             ),
                             Text(
-                              "Orginal Sound - extreamsports_95",
+                              "Original Sound - extremists_95",
                               style: TextStyle(color: Colors.white),
                             )
                           ],
@@ -77,21 +79,21 @@ class PostContent extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: 80,
+                  width: screenHeight*0.08,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       SizedBox(
-                        height: 80,
+                        height: screenHeight*0.08,
                         child: Stack(
                           alignment: Alignment.bottomCenter,
                           children: [
                             Container(
                               margin: const EdgeInsets.only(bottom: 10),
-                              child: const CircleAvatar(
+                              child:  const CircleAvatar(
                                 radius: 25,
                                 backgroundImage:
-                                AssetImage("assets/images/will_simth.jpg"),
+                               AssetImage("assets/will_smith.jpg")
                               ),
                             ),
                             Container(
@@ -108,6 +110,7 @@ class PostContent extends StatelessWidget {
                           ],
                         ),
                       ),
+                      const SizedBox(height: 10,),
                       SizedBox(
                         height: 80,
                         child: Column(
@@ -128,7 +131,7 @@ class PostContent extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 80,
+                        height: screenHeight*0.09,
                         child: Column(
                           children: [
                             Icon(
@@ -147,7 +150,7 @@ class PostContent extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 80,
+                        height: screenHeight*0.09,
                         child: Column(
                           children: [
                             Icon(

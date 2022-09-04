@@ -15,7 +15,7 @@ class _AnimatedLogoState extends State<AnimatedLogo>
     // TODO: implement initState
     super.initState();
     _controller=AnimationController(vsync: this,
-        duration: Duration(milliseconds: 4000)
+        duration: const Duration(milliseconds: 4000)
     );
     _controller.repeat();
   }
@@ -34,14 +34,14 @@ class _AnimatedLogoState extends State<AnimatedLogo>
       child: Container(
         height: 45,
         width: 45,
-        padding: EdgeInsets.all(5),
+        padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
-            image: DecorationImage(
-                image:AssetImage ("assets/images/disk.png")
+            image: const DecorationImage(
+                image:AssetImage ("assets/disk.png")
             )
         ),
-        child: Image.asset("assets/images/tiktok_logo.jpg"),),
+        child: Image.asset("assets/tiktok_logo.jpg"),),
     );
   }
 }

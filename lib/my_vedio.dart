@@ -38,12 +38,12 @@ class _MyVedioState extends State<MyVedio> {
           // fit: StackFit.expand,
           children: [
             controller!.value.isInitialized
-                ? Container(
+                ? SizedBox(
                     height: double.infinity, child: VideoPlayer(controller!))
-                : Container(
+                : const SizedBox(
                     height: 200,
                     width: double.infinity,
-                    child: const Center(child: CircularProgressIndicator()),
+                    child: Center(child: CircularProgressIndicator()),
                   ),
             const PostContent()
           ],
